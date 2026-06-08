@@ -3,7 +3,7 @@ name: mt-plan-project
 description: Turn a goal or brief into a new MeisterTask project with sections and an initial set of tasks.
 ---
 
-# Plan a MeisterTask Project
+# Plan a MeisterTask project
 
 Use the MeisterTask MCP to create a structured project from a goal or brief.
 

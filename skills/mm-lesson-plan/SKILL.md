@@ -3,7 +3,7 @@ name: mm-lesson-plan
 description: Create a structured lesson plan mind map following a 5-branch pedagogical framework.
 ---
 
-# Lesson Plan Map
+# Lesson plan map
 
 Use the MindMeister MCP to build a lesson plan as a mind map. Searches existing notes for context first, then creates a structured map using a fixed 5-branch framework.
 
@@ -15,7 +15,7 @@ Use the MindMeister MCP to build a lesson plan as a mind map. Searches existing 
    - Duration
    - Any specific requirements or constraints
 2. Search for existing content:
-   - If the MeisterTask MCP is available, use `mt_search` (types: NOTES) to find existing lesson plans or notes on this topic. If not, ask the user if there are any existing plans to build on.
+   - If the MeisterTask MCP is available, use `mt_search` (types: ["NOTES"]) to find existing lesson plans or notes on this topic. If not, ask the user if there are any existing plans to build on.
    - Use relevant content to inform the new plan — avoid duplicating work already done.
 3. Build the lesson plan map using `mm_maps_create` and `mm_changes_apply` with this fixed 5-branch structure:
    - **Learning outcome** — the end goal: what students will know or be able to do by the end

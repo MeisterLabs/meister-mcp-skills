@@ -3,7 +3,7 @@ name: mt-daily-standup
 description: Summarize what you worked on yesterday and what's planned for today from your MeisterTask activity.
 ---
 
-# Daily Standup Summary
+# Daily standup summary
 
 Use the MeisterTask MCP to generate a standup-ready summary from your MeisterTask activity.
 

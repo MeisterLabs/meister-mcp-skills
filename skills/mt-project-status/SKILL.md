@@ -3,7 +3,7 @@ name: mt-project-status
 description: Generate a current-state summary of a MeisterTask project showing task counts by section, overdue items, and recent activity.
 ---
 
-# Project Status
+# Project status
 
 Use the MeisterTask MCP to generate a snapshot of a MeisterTask project's current state.
 

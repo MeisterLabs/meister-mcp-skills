@@ -3,9 +3,9 @@ name: mt-project-proposal
 description: Create a structured project proposal Note from a brief, ready for stakeholder review and handoff to note-to-project.
 ---
 
-# Project Proposal
+# Project proposal
 
-Use the MeisterTask MCP to turn a project idea or brief into a structured proposal Note. Searches existing context first, drafts a structured document, and creates a Note ready for review. Designed to feed directly into the `note-to-project` skill once approved.
+Use the MeisterTask MCP to turn a project idea or brief into a structured proposal Note. Searches existing context first, drafts a structured document, and creates a Note ready for review. Designed to feed directly into the `mt-note-to-project` skill once approved.
 
 ## Workflow
 
@@ -14,7 +14,7 @@ Use the MeisterTask MCP to turn a project idea or brief into a structured propos
    - Who is sponsoring or requesting it?
    - Any known constraints: budget, timeline, team size?
 2. Search for existing context:
-   - Use `mt_search` (types: NOTES, PROJECTS) to find related prior decisions, existing projects, or OKR notes.
+   - Use `mt_search` (types: ["NOTES", "PROJECTS"]) to find related prior decisions, existing projects, or OKR notes.
    - Use `mt_notes_get` on any relevant notes to extract useful context.
    - Surface conflicts or dependencies with existing work before drafting — not after.
 3. Confirm the proposal outline with the user:
@@ -32,4 +32,4 @@ Use the MeisterTask MCP to turn a project idea or brief into a structured propos
 
 ## Important
 
-Don't skip the context search in step 2. Surface conflicts with existing work before drafting, not after. The proposal is designed to feed directly into `note-to-project` — write scope and task descriptions with implementation in mind. If the brief is too vague to write a meaningful scope section, ask the user to clarify before proceeding.
+Don't skip the context search in step 2. Surface conflicts with existing work before drafting, not after. The proposal is designed to feed directly into `mt-note-to-project` — write scope and task descriptions with implementation in mind. If the brief is too vague to write a meaningful scope section, ask the user to clarify before proceeding.

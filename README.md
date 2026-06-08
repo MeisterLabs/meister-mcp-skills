@@ -8,8 +8,8 @@ Skills follow the [Agent Skills](https://agentskills.io) open standard and work 
 
 These skills call the MeisterTask and MindMeister MCP servers. Install the one(s) you need first:
 
-- **MeisterTask MCP** — required for all `mt-` skills - setup instructions in the [MeisterTask MCP docs](https://support.meistertask.com/hc/en-us/articles/35486711538322). 
-- **MindMeister MCP** — required for all `mm-` skills - setup instructions in the [MindMeister MCP docs](https://support.mindmeister.com/hc/en-us/articles/35527359488018). 
+- **MeisterTask MCP** — required for all `mt-` skills. Setup instructions in the [MeisterTask MCP docs](https://support.meistertask.com/hc/en-us/articles/35486711538322).
+- **MindMeister MCP** — required for all `mm-` skills. Setup instructions in the [MindMeister MCP docs](https://support.mindmeister.com/hc/en-us/articles/35527359488018).
 
 A MeisterTask or MindMeister account is required.
 

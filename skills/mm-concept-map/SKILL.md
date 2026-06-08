@@ -3,7 +3,7 @@ name: mm-concept-map
 description: Build a concept map showing how topics relate to each other through explicitly labeled connections.
 ---
 
-# Concept Map
+# Concept map
 
 Use the MindMeister MCP to create a concept map with labeled relationships between topics — showing not just what the concepts are, but how they connect.
 
@@ -17,7 +17,7 @@ A mind map radiates ideas from a central topic. A concept map shows the *relatio
    - What is the domain or central concept?
    - Who is the audience? (student revision, team onboarding, stakeholder explainer)
 2. Search for existing content:
-   - If the MeisterTask MCP is available, use `mt_search` (types: NOTES) to find existing notes or documents on this topic. If not, ask the user to describe any existing material to draw from.
+   - If the MeisterTask MCP is available, use `mt_search` (types: ["NOTES"]) to find existing notes or documents on this topic. If not, ask the user to describe any existing material to draw from.
    - Extract key concepts and any relationships already described in the found content.
 3. Identify concepts and relationships:
    - Aim for 6–15 concepts relevant to the topic.

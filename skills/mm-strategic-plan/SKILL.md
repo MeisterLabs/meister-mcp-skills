@@ -3,7 +3,7 @@ name: mm-strategic-plan
 description: Create a strategic planning mind map using a chosen framework, then optionally stress-test it with an adversarial challenge pass.
 ---
 
-# Strategic Plan Map
+# Strategic plan map
 
 Use the MindMeister MCP to map out a strategy visually — starting from existing context, building a structured plan, and optionally adding a challenge layer that surfaces risks, assumptions, and falsifiable claims.
 
@@ -15,7 +15,7 @@ Use the MindMeister MCP to map out a strategy visually — starting from existin
 - What constraints or prior decisions are already in play?
 
 ### 2. Search for existing context
-If the MeisterTask MCP is available, use `mt_search` (types: NOTES) to find existing strategy documents, OKR notes, prior decisions, or relevant analysis. If not, ask the user to describe any prior decisions or constraints already in play.
+If the MeisterTask MCP is available, use `mt_search` (types: ["NOTES"]) to find existing strategy documents, OKR notes, prior decisions, or relevant analysis. If not, ask the user to describe any prior decisions or constraints already in play.
 
 Surface what's already decided before proposing structure — the map should reflect where things actually stand, not start from scratch. Flag any conflicts with existing commitments found in this step.
 
@@ -28,11 +28,11 @@ Confirm the framework with the user before building. Options:
 - **Porter's Five Forces** — Threat of new entrants, Supplier power, Buyer power, Threat of substitutes, Competitive rivalry
 
 **Advantage and resource analysis**
-- **VRIO** — stress-test claimed competitive advantages: Valuable, Rare, Inimitable, Organised. For each claimed advantage, does it clear all four bars?
+- **VRIO** — stress-test claimed competitive advantages: Valuable, Rare, Inimitable, Organized. For each claimed advantage, does it clear all four bars?
 - **7 Powers (Hamilton Helmer)** — map which of the seven powers the strategy currently has, is building toward, or is missing: Scale economies, Network economies, Counter-positioning, Switching costs, Branding, Cornered resource, Process power
 
 **Goal and execution**
-- **OKR** — Objectives as first-level branches; Key Results as sub-nodes (see `okr-map` for a dedicated OKR workflow)
+- **OKR** — Objectives as first-level branches; Key Results as sub-nodes (see `mm-okr-map` for a dedicated OKR workflow)
 - **Freeform** — propose a structure based on the brief and confirm before building
 
 ### 4. Build the map

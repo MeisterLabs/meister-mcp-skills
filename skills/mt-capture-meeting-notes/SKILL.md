@@ -3,7 +3,7 @@ name: mt-capture-meeting-notes
 description: Create a Note in MeisterTask for a meeting, with action items automatically turned into tasks.
 ---
 
-# Capture Meeting Notes
+# Capture meeting notes
 
 Use the MeisterTask MCP to save meeting notes as a Note and convert action items into MeisterTask tasks.
 
@@ -24,7 +24,7 @@ Use the MeisterTask MCP to save meeting notes as a Note and convert action items
    - **Action items** — bulleted list with owner and due date
 4. If action items were found and a target project is available:
    - Use `mt_sections_list` to find an appropriate section (e.g., Backlog or To Do).
-   - Create tasks using `mt_batch_execute`.
+   - Create tasks using `mt_batch_execute` — fall back to individual `mt_tasks_create` calls if the batch call fails.
    - Add the Note URL as a comment on each task via `mt_tasks_comments_create`.
 5. Return the Note URL and a list of any tasks created.
 

@@ -3,7 +3,7 @@ name: mm-okr-map
 description: Create an OKR (Objectives and Key Results) map for a goal or initiative.
 ---
 
-# OKR Map
+# OKR map
 
 Use the MindMeister MCP to structure a goal into Objectives and Key Results as a shareable mind map.
 
@@ -14,7 +14,7 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
    - Time period (quarterly, annual)?
    - Team or individual level?
 2. Search for existing context:
-   - If the MeisterTask MCP is available, use `mt_search` (types: NOTES) to find existing OKR documents, strategy notes, or related project context.
+   - If the MeisterTask MCP is available, use `mt_search` (types: ["NOTES"]) to find existing OKR documents, strategy notes, or related project context.
    - If not, ask the user to describe any existing OKRs or strategy documents to reference.
    - Use found content to align new OKRs with existing ones and avoid contradictions.
 3. Draft the OKR structure:
@@ -50,4 +50,4 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
 
 ## Important
 
-Key Results must be measurable. If a user proposes a KR like "improve customer satisfaction", prompt them to define the metric and target before proceeding. Objectives should be qualitative and inspiring — Key Results do the measuring. Don't create a map with more than 5 Objectives; OKRs only work when they force prioritisation.
+Key Results must be measurable. If a user proposes a KR like "improve customer satisfaction", prompt them to define the metric and target before proceeding. Objectives should be qualitative and inspiring — Key Results do the measuring. Don't create a map with more than 5 Objectives; OKRs only work when they force prioritization.

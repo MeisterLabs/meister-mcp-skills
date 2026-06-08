@@ -3,7 +3,7 @@ name: mt-weekly-review
 description: Surface overdue tasks, tasks due this week, and recently completed tasks across MeisterTask projects for a weekly review.
 ---
 
-# Weekly Review
+# Weekly review
 
 Use the MeisterTask MCP to run a structured weekly review across your MeisterTask projects.
 

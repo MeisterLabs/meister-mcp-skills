@@ -3,7 +3,7 @@ name: mm-team-meeting
 description: Run a meeting with a visual MindMeister agenda — prepare before, capture notes during, and export a record after.
 ---
 
-# Team Meeting Map
+# Team meeting map
 
 Use the MindMeister MCP to create a structured meeting agenda, capture discussion notes and decisions in real time, and export a PDF record.
 
@@ -14,7 +14,7 @@ Ask the user which stage they're at — **before**, **during**, or **after** the
 ### Before the meeting
 
 1. Search for context:
-   - If the MeisterTask MCP is available, use `mt_search` (types: NOTES) to find related notes, past meeting maps, or relevant background on the agenda topics. If not, ask the user if there are any relevant prior documents to reference.
+   - If the MeisterTask MCP is available, use `mt_search` (types: ["NOTES"]) to find related notes, past meeting maps, or relevant background on the agenda topics. If not, ask the user if there are any relevant prior documents to reference.
 2. Gather meeting details:
    - Meeting title and date
    - Agenda topics (and owner per topic if known)
@@ -32,6 +32,7 @@ Ask the user which stage they're at — **before**, **during**, or **after** the
 6. As each topic is discussed, add to the map using `mm_changes_apply`:
    - Decisions made → decision sub-node under the topic branch
    - Key discussion points → notes sub-nodes
+   - Action items → prefix the node label with `→ Action` so they can be extracted afterward
    - Open items → flag with a prefix like "?" in the node label
 
 ### After the meeting

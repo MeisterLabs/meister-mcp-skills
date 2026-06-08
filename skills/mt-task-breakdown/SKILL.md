@@ -3,7 +3,7 @@ name: mt-task-breakdown
 description: Break a high-level goal into a structured set of tasks in an existing MeisterTask project.
 ---
 
-# Task Breakdown
+# Task breakdown
 
 Use the MeisterTask MCP to decompose a goal or feature into a concrete task list in MeisterTask.
 

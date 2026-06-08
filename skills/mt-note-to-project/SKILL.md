@@ -3,7 +3,7 @@ name: mt-note-to-project
 description: Convert an existing MeisterTask Note — a spec, brief, or proposal — into a structured MeisterTask project with sections and tasks.
 ---
 
-# Note to Project
+# Note to project
 
 Use the MeisterTask MCP to read an existing Note and scaffold it into a MeisterTask project. The Note is the spec; this skill turns it into something executable.
 
@@ -11,7 +11,7 @@ Use the MeisterTask MCP to read an existing Note and scaffold it into a MeisterT
 
 1. Identify the source note:
    - Ask the user for the Note URL or title.
-   - If no URL is provided, use `mt_search` (types: NOTES) to find it.
+   - If no URL is provided, use `mt_search` (types: ["NOTES"]) to find it.
    - Fetch the full content with `mt_notes_get`.
 2. Parse the note for project structure:
    - Extract: goal or objective, key workstreams or phases, specific tasks or action items, stakeholders, timeline indicators.
@@ -31,4 +31,4 @@ Use the MeisterTask MCP to read an existing Note and scaffold it into a MeisterT
 
 ## Important
 
-Always confirm the proposed structure before creating anything. If the note is ambiguous or underspecified, ask the user to clarify scope rather than guessing. Don't create more than 20 tasks without confirming first. This skill pairs well with `project-proposal` — use that to write the Note, then this skill to execute it.
+Always confirm the proposed structure before creating anything. If the note is ambiguous or underspecified, ask the user to clarify scope rather than guessing. Don't create more than 20 tasks without confirming first. This skill pairs well with `mt-project-proposal` — use that to write the Note, then this skill to execute it.

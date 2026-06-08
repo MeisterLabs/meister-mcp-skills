@@ -3,7 +3,7 @@ name: mm-outline-to-map
 description: Convert a structured text outline or bullet list into a MindMeister mind map.
 ---
 
-# Outline to Mind Map
+# Outline to mind map
 
 Use the MindMeister MCP to turn a structured outline into a MindMeister mind map.
 
