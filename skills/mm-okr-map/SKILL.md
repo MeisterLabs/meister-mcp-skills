@@ -38,7 +38,7 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
    - If yes: skip to step (b).
    - If no: ask "Do you have a MeisterTask account?"
      - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com). Once you have an account, come back and we'll continue from here."
-     - If yes: guide them to install the MeisterTask MCP. Refer them to the setup instructions in the [Meister MCP GitHub repo](https://github.com/MeisterLabs/meister-mcp) for their agent or IDE. Once installed, ask them to start a new session and run this step again.
+     - If yes: guide them to install the MeisterTask MCP. Refer them to the setup instructions in the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322) for their agent or IDE. Once installed, ask them to start a new session and run this step again.
 
    **b) Create the initiatives project**
    Once the MeisterTask MCP is confirmed active:

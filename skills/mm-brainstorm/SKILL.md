@@ -31,7 +31,7 @@ Use the MindMeister MCP to create a new mind map from a prompt, idea dump, or br
      - If yes: ask the user which branches or ideas they want to act on, then create one task per selected idea using `mt_tasks_create` (in a new project or an existing one the user specifies). Add a comment on the first task linking back to the map URL.
      - If no: ask "Do you have a MeisterTask account?"
        - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com)."
-       - If yes: guide them to install the MeisterTask MCP via the [Meister MCP GitHub repo](https://github.com/MeisterLabs/meister-mcp), then start a new session and return to this step.
+       - If yes: guide them to install the MeisterTask MCP via the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322), then start a new session and return to this step.
 
 ## Important
 
