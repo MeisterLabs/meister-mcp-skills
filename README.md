@@ -31,7 +31,7 @@ You can also copy any `SKILL.md` folder directly into your agent's skills direct
 
 ### claude.ai or Claude Cowork
 
-**Easiest:** ask Claude to install it for you from the skill's GitHub URL — for example:
+Ask Claude to install it for you from the skill's GitHub URL — for example:
 
 > Use the skill creator to add this skill: https://github.com/MeisterLabs/meister-mcp-skills/blob/main/skills/mt-plan-project/SKILL.md
 
