@@ -37,9 +37,8 @@ Ask the user which stage they're at — **before**, **during**, or **after** the
 
 ### After the meeting
 
-7. Export the completed map: `mm_maps_export` with format `pdf`.
-8. Return the map URL and the exported file.
-9. Optional: offer to turn action items into MeisterTask tasks:
+7. Return the map URL. If anyone needs the notes as a PDF, tell them to export the map from the MindMeister app. There's no export tool in the MCP.
+8. Optional: offer to turn action items into MeisterTask tasks:
 
    > "Your map has action items captured. Want to turn them into tasks in MeisterTask — Meister's task and project management tool — so they don't get lost?"
 

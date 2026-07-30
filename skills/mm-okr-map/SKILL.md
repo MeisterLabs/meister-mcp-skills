@@ -26,7 +26,7 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
    - First-level branches: Objectives
    - Second-level branches: Key Results — include the measurable target in the label (e.g., "Increase NPS from 32 to 50 by Q4")
    - Optional third level: tracking method or owner per KR
-5. Export: `mm_maps_export` with format `pdf`.
+5. To circulate the map, offer a view-only link: `mm_share_links_create` with `permission: "read"`. If they want a PDF, tell them to export it from the MindMeister app. There's no export tool in the MCP.
 6. Return the map URL, then offer to turn the OKRs into an actionable MeisterTask project:
 
    > "Your map defines what you want to achieve. Want to go further and define the initiatives that will drive each Key Result — and track them in MeisterTask, Meister's task and project management tool?"
