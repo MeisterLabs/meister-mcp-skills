@@ -49,9 +49,10 @@ After the base map is built, offer to add a stress-test layer. For each strategi
 
 This pass turns the map from a communication tool into a working document. Branches that survive the challenge pass are the ones worth defending; branches that don't are the ones that need more work before presenting.
 
-### 6. Export and return
-- `mm_maps_export` with format `pdf`.
-- Return the map URL and exported file.
+### 6. Share and return
+- Return the map URL.
+- For circulating it to stakeholders, offer a view-only link: `mm_share_links_create` with `permission: "read"`.
+- If they want a PDF for a deck or a handout, tell them to export it from the MindMeister app. There's no export tool in the MCP.
 
 ### 7. Optional: turn strategy into action in MeisterTask
 
