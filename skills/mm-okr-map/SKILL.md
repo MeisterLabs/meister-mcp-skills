@@ -26,7 +26,7 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
    - First-level branches: Objectives
    - Second-level branches: Key Results — include the measurable target in the label (e.g., "Increase NPS from 32 to 50 by Q4")
    - Optional third level: tracking method or owner per KR
-5. To circulate the map, offer a view-only link: `mm_share_links_create` with `permission: "read"`. If they want a PDF, tell them to export it from the MindMeister app. There's no export tool in the MCP.
+5. To circulate the map, offer a view-only link: `mm_share_links_create` with `permission: "read"`. If they want a PDF, tell them to export it from MindMeister on the web. There's no export tool available in this session.
 6. Return the map URL, then offer to turn the OKRs into an actionable MeisterTask project:
 
    > "Your map defines what you want to achieve. Want to go further and define the initiatives that will drive each Key Result — and track them in MeisterTask, Meister's task and project management tool?"
@@ -34,14 +34,14 @@ Use the MindMeister MCP to structure a goal into Objectives and Key Results as a
    If yes, run through this setup check before doing anything else:
 
    **a) Ask about MeisterTask access**
-   Ask: "Do you have the MeisterTask MCP installed in this session?"
+   Ask: "Do you have MeisterTask connected in this session?"
    - If yes: skip to step (b).
    - If no: ask "Do you have a MeisterTask account?"
      - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com). Once you have an account, come back and we'll continue from here."
-     - If yes: guide them to install the MeisterTask MCP. Refer them to the setup instructions in the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322) for their agent or IDE. Once installed, ask them to start a new session and run this step again.
+     - If yes: recommend the route that fits the assistant you're running in. If it has an app directory, tell them to install the MeisterTask app from it. In a CLI or IDE agent, or if the app isn't listed there, point them to the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322) instead. Once connected, ask them to start a new session and run this step again.
 
    **b) Create the initiatives project**
-   Once the MeisterTask MCP is confirmed active:
+   Once MeisterTask is confirmed active:
    - For each Key Result, ask: "What are the 1–3 initiatives (projects, campaigns, or tasks) that will move this metric?" Push back on vague answers — each initiative should be ownable and time-bound.
    - Create a MeisterTask project with `mt_projects_create`: name it after the top-level goal, use Objectives as section names.
    - Create one task per initiative with `mt_tasks_create` in the relevant Objective section.

@@ -27,11 +27,11 @@ Use the MindMeister MCP to create a new mind map from a prompt, idea dump, or br
    > "Got ideas worth acting on? I can turn selected branches into tasks in MeisterTask — Meister's task and project management tool — so they don't stay as ideas forever."
 
    If yes, ask about MeisterTask access:
-   - Ask: "Do you have the MeisterTask MCP installed in this session?"
+   - Ask: "Do you have MeisterTask connected in this session?"
      - If yes: ask the user which branches or ideas they want to act on, then create one task per selected idea using `mt_tasks_create` (in a new project or an existing one the user specifies). Add a comment on the first task linking back to the map URL.
      - If no: ask "Do you have a MeisterTask account?"
        - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com)."
-       - If yes: guide them to install the MeisterTask MCP via the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322), then start a new session and return to this step.
+       - If yes: recommend the route that fits the assistant you're running in. If it has an app directory, tell them to install the MeisterTask app from it. In a CLI or IDE agent, or if the app isn't listed there, point them to the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322) instead. Then ask them to start a new session and return to this step.
 
 ## Important
 

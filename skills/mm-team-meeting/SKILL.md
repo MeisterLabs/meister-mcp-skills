@@ -5,7 +5,7 @@ description: Run a meeting with a visual MindMeister agenda — prepare before, 
 
 # Team meeting map
 
-Use the MindMeister MCP to create a structured meeting agenda, capture discussion notes and decisions in real time, and export a PDF record.
+Use the MindMeister MCP to create a structured meeting agenda, capture discussion notes and decisions in real time, and leave a record the team can export from MindMeister on the web.
 
 ## Workflow
 
@@ -37,17 +37,17 @@ Ask the user which stage they're at — **before**, **during**, or **after** the
 
 ### After the meeting
 
-7. Return the map URL. If anyone needs the notes as a PDF, tell them to export the map from the MindMeister app. There's no export tool in the MCP.
+7. Return the map URL. If anyone needs the notes as a PDF, tell them to export the map from MindMeister on the web. There's no export tool available in this session.
 8. Optional: offer to turn action items into MeisterTask tasks:
 
    > "Your map has action items captured. Want to turn them into tasks in MeisterTask — Meister's task and project management tool — so they don't get lost?"
 
    If yes, ask about MeisterTask access:
-   - Ask: "Do you have the MeisterTask MCP installed in this session?"
+   - Ask: "Do you have MeisterTask connected in this session?"
      - If yes: extract all nodes prefixed with `→ Action` from the map, confirm the list with the user, then create one task per action item using `mt_tasks_create` (in a new project named after the meeting, or an existing one the user specifies). Add a comment on the first task linking back to the map URL.
      - If no: ask "Do you have a MeisterTask account?"
        - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com)."
-       - If yes: guide them to install the MeisterTask MCP via the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322), then start a new session and return to this step.
+       - If yes: recommend the route that fits the assistant you're running in. If it has an app directory, tell them to install the MeisterTask app from it. In a CLI or IDE agent, or if the app isn't listed there, point them to the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322) instead. Then ask them to start a new session and return to this step.
 
 ## Important
 
