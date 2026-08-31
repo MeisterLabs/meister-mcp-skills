@@ -8,7 +8,7 @@ Skills follow the [Agent Skills](https://agentskills.io) open standard and work 
 
 These skills need MeisterTask or MindMeister connected to your AI assistant. Set up whichever you need first:
 
-- **Install the official app.** Find MeisterTask or MindMeister in your AI assistant's app directory and connect it. This is the quickest route: you sign in once and there is no connector URL or API key to handle.
+- **Install the official app.** Find MeisterTask or MindMeister in your AI assistant's app directory and connect it. This is the quickest route: you sign in once and there is no connector URL or API key to handle. Availability varies by assistant, so if the app isn't listed, use the MCP server route below instead.
 - **MeisterTask MCP server** — an alternative route for all `mt-` skills, and the right one for Claude Code, IDE and CLI users. Setup instructions in the [MeisterTask MCP docs](https://support.meistertask.com/hc/en-us/articles/35486711538322).
 - **MindMeister MCP server** — the same alternative route for all `mm-` skills. Setup instructions in the [MindMeister MCP docs](https://support.mindmeister.com/hc/en-us/articles/35527359488018).
 
@@ -36,7 +36,7 @@ You can also copy any `SKILL.md` folder directly into your agent's skills direct
 
 Ask your assistant to install the skill from its GitHub URL. For example:
 
-> Use the skill creator to add this skill: https://github.com/MeisterLabs/meister-mcp-skills/blob/main/skills/mt-plan-project/SKILL.md
+> Add this skill from GitHub: https://github.com/MeisterLabs/meister-mcp-skills/blob/main/skills/mt-plan-project/SKILL.md
 
 Organization admins can publish skills account-wide so the whole team gets them without uploading individually.
 
