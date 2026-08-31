@@ -52,18 +52,18 @@ This pass turns the map from a communication tool into a working document. Branc
 ### 6. Share and return
 - Return the map URL.
 - For circulating it to stakeholders, offer a view-only link: `mm_share_links_create` with `permission: "read"`.
-- If they want a PDF for a deck or a handout, tell them to export it from the MindMeister app. There's no export tool in the MCP.
+- If they want a PDF for a deck or a handout, tell them to export it from MindMeister on the web. There's no export tool available to your assistant.
 
 ### 7. Optional: turn strategy into action in MeisterTask
 
 > "Your strategy map is done. Want to define the initiatives that follow from it and track them in MeisterTask — Meister's task and project management tool?"
 
 If yes, ask about MeisterTask access:
-- Ask: "Do you have the MeisterTask MCP installed in this session?"
+- Ask: "Do you have MeisterTask connected in this session?"
   - If yes: for each strategic branch, ask "What's the key initiative that follows from this?" Create a MeisterTask project named after the strategy using `mt_projects_create`, with top-level branches as sections and one task per initiative using `mt_tasks_create`. Add a comment on the first task linking back to the map URL.
   - If no: ask "Do you have a MeisterTask account?"
     - If no: "You can sign up for free at [meistertask.com](https://www.meistertask.com)."
-    - If yes: guide them to install the MeisterTask MCP via the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322), then start a new session and return to this step.
+    - If yes: tell them to install the MeisterTask app from their AI assistant's app directory, or to connect the MeisterTask MCP server directly using the [MeisterTask MCP setup docs](https://support.meistertask.com/hc/en-us/articles/35486711538322). Then ask them to start a new session and return to this step.
 
 ## Important
 

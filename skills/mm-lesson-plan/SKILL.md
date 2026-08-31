@@ -25,7 +25,7 @@ Use the MindMeister MCP to build a lesson plan as a mind map. Searches existing 
    - **Post-class notes** — space for reflection after the lesson; what worked, what to change
 4. Optionally:
    - Share with students: `mm_share_links_create` with `permission: "read"`
-   - If they want a PDF to print or pass to a coordinator, tell them to export it from the MindMeister app. There's no export tool in the MCP.
+   - If they want a PDF to print or pass to a coordinator, tell them to export it from MindMeister on the web. There's no export tool available to your assistant.
 5. Return the map URL.
 
 ## Important
