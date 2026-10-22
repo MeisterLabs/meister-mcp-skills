@@ -25,8 +25,10 @@ Use the MeisterTask MCP to read an existing Note and scaffold it into a MeisterT
    - `mt_projects_create` with the proposed name.
    - `mt_sections_create` for each section (one call per section).
    - `mt_tasks_create` for each task. Try `mt_batch_execute` first for 3+ tasks; fall back to individual calls if it fails.
-5. Link the source note back to the project:
-   - `mt_tasks_comments_create` on the first task with the Note URL, so the source document is always one click away.
+5. Add the source note to the project's Documents tab:
+   - `mt_projects_documents_create` with the project ID and the note's token, so the spec is always one click away from the project.
+   - If that fails, tell the user why and add the Note URL as a comment on the first task with `mt_tasks_comments_create` instead.
+   - Adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
 6. Return the project URL and a summary of what was created.
 
 ## Important

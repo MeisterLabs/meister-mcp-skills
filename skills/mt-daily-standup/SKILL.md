@@ -22,6 +22,11 @@ Use the MeisterTask MCP to generate a standup-ready summary from your MeisterTas
    - **Today**: tasks due today or planned next
    - **Blockers**: overdue tasks or open questions (only if found)
 5. Keep it concise — no more than 5 bullets per section. Offer to post it or copy it.
+6. Offer to save the standup as a Note:
+   - Keep every standup under one "Standups" parent Note. Look for it with `mt_search` (types: ["NOTES"]); create it with `mt_notes_create` on first use.
+   - Create the standup as a child note with `mt_notes_create` and `parentToken` set to the parent's token.
+   - Offer to add the parent Note to the Documents tab of each project the standup covers, using `mt_projects_documents_create`. Check `mt_projects_documents_list` first, so it's only added once. Only project admins can add documents; if the call fails, say so and carry on.
+   - Adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
 
 ## Important
 
