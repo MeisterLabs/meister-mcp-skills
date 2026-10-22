@@ -17,6 +17,7 @@ Use the MeisterTask MCP to create a structured project from a goal or brief.
    - Optional: team members to invite, due dates
 2. Propose the project structure:
    - Suggest 3–5 sections based on the brief (e.g., Backlog, In Progress, Review, Done — or phase-based names like Discovery, Build, Launch).
+   - Say that the brief and any reference links will be added to the project's Documents tab.
    - Confirm with the user before creating.
 3. Create the project using `mt_projects_create`.
 4. Create sections using `mt_sections_create` (one call per section).

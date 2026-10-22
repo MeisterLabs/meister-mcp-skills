@@ -28,10 +28,10 @@ Use the MeisterTask MCP to generate a snapshot of a MeisterTask project's curren
    - **Documents** — how many, and the key ones by name (only if the project has any)
 5. Use `mt_search` with the project ID filter to surface recently active items if needed.
 6. Present the summary in a clean, scannable format. Offer to save it as a Note:
-   - Keep status updates under one parent Note per project (for example "Website relaunch status updates"). Look for it in the project's Documents tab (`mt_projects_documents_list`), then with `mt_search` (types: ["NOTES"]). If that finds more than one candidate, or only finds one outside the project's Documents tab that the user didn't create, ask which to use. Otherwise create it with `mt_notes_create` on first use.
+   - Keep status updates under one parent Note titled "<project name> status updates". If it's among the documents fetched in step 2, use it. Otherwise search for that title with `mt_search` (types: ["NOTES"]) and ask the user before filing under a note it finds. If there's none, create it with `mt_notes_create`.
    - Create the summary as a child note with `mt_notes_create` and `parentToken` set to the parent's token.
-   - If the parent isn't in the project's Documents tab yet, offer to add it with `mt_projects_documents_create`, so the tab holds one entry rather than one per update. Only project admins can add documents; if the call fails, say so and share the Note URL instead.
-   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
+   - If the parent isn't in the project's Documents tab yet, offer to add it with `mt_projects_documents_create` and the parent's token, so the tab holds one entry rather than one per update. Only project admins can add documents; if the call fails, say so and return the Note URL.
+   - If the parent was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the parent Note with them in MeisterTask, since the MCP can't change note sharing.
 
 ## Important
 

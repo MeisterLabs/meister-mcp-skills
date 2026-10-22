@@ -22,10 +22,10 @@ Use the MeisterTask MCP to run a structured weekly review across your MeisterTas
 4. Flag any projects with no activity in the last 7 days.
 5. Offer to reschedule overdue tasks.
 6. Offer to save the review as Notes, one per project, so each project's weekly reviews stay with that project and don't reach members of the others:
-   - Each project gets one parent Note for its weekly reviews (for example "Website relaunch weekly reviews"). Look for it in the project's Documents tab (`mt_projects_documents_list`), then with `mt_search` (types: ["NOTES"]). If that finds more than one candidate, or only finds one outside the project's Documents tab that the user didn't create, ask which to use. Otherwise create it with `mt_notes_create` on first use.
+   - Each project gets one parent Note titled "<project name> weekly reviews". If it's in the project's Documents tab (`mt_projects_documents_list`), use it. Otherwise search for that title with `mt_search` (types: ["NOTES"]) and ask the user before filing under a note it finds. If there's none, create it with `mt_notes_create`.
    - Create a child note under that parent (`mt_notes_create` with `parentToken`) holding only that project's part of the review.
-   - If the parent isn't in the project's Documents tab yet, offer to add it with `mt_projects_documents_create`, so the tab holds one entry rather than one per review. Only project admins can add documents; if the call fails, say so and carry on.
-   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
+   - For any parent not yet in its project's Documents tab, make one offer covering all of them, then add each with `mt_projects_documents_create` and the parent's token, so each tab holds one entry rather than one per review. Only project admins can add documents; if a call fails, say so and carry on.
+   - If a parent was added: adding a note to a project doesn't share it. Ask once whether those projects' members should be able to read their parent Note. If so, list them with `mt_projects_members_list` and ask the user to share the parent Note with them in MeisterTask, since the MCP can't change note sharing.
 
 ## Important
 
