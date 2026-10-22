@@ -22,11 +22,13 @@ Use the MeisterTask MCP to save meeting notes as a Note and convert action items
    - **Decisions** — key outcomes
    - **Notes** — full notes
    - **Action items** — bulleted list with owner and due date
+   - For a recurring meeting, create the Note as a child of one parent Note for that meeting (for example "Marketing team meeting notes"), using `parentToken`. Look for it in the project's Documents tab (`mt_projects_documents_list`), then with `mt_search` (types: ["NOTES"]). If that finds more than one candidate, or only finds one outside the project's Documents tab that the user didn't create, ask which to use. Otherwise create it with `mt_notes_create` on first use. A one-off meeting gets a standalone Note.
 4. If action items were found and a target project is available:
    - Use `mt_sections_list` to find an appropriate section (e.g., Backlog or To Do).
    - Create tasks using `mt_batch_execute` — fall back to individual `mt_tasks_create` calls if the batch call fails.
    - Add the Note URL as a comment on each task via `mt_tasks_comments_create`.
 5. If a target project is available, offer to add the Note to the project's Documents tab. Its title becomes visible to every project member.
+   - For a recurring meeting, add the parent Note, and only if it isn't in the tab yet. For a one-off meeting, add the Note itself.
    - If the user agrees, use `mt_projects_documents_create` with the project ID and the note's token.
    - Only project admins can add documents. If the call fails, tell the user and carry on: any task comments still link the Note, and you return its URL anyway.
    - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
