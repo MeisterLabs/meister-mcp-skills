@@ -44,10 +44,10 @@ Organization admins can publish skills account-wide so the whole team gets them 
 
 | Skill | Description |
 |---|---|
-| `mt-plan-project` | Turn a goal or brief into a project with sections and initial tasks |
+| `mt-plan-project` | Turn a goal or brief into a project with sections, initial tasks and its key documents |
 | `mt-task-breakdown` | Break a high-level goal into a structured task list |
 | `mt-capture-meeting-notes` | Save meeting notes as a Note and turn action items into tasks |
-| `mt-project-status` | Summarize a project's current state: open tasks, overdue items, recent activity |
+| `mt-project-status` | Summarize a project's current state, or catch up on it: open tasks, overdue items, recent activity, key documents |
 | `mt-daily-standup` | Generate a standup-ready summary from your recent activity |
 | `mt-weekly-review` | Surface overdue, upcoming, and completed tasks across projects |
 | `mt-project-proposal` | Create a structured proposal Note from a brief, ready for stakeholder review |
