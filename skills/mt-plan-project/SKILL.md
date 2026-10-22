@@ -11,11 +11,10 @@ Use the MeisterTask MCP to create a structured project from a goal or brief.
 
 1. Gather the project details:
    - Project name (required)
-   - Goal or brief description
+   - Goal or brief, as text, a Note, or links to specs, designs or shared folders
    - Key phases or workstreams (to become sections)
    - Known tasks or deliverables
    - Optional: team members to invite, due dates
-   - Optional: the brief itself and any reference links (specs, designs, shared folders)
 2. Propose the project structure:
    - Suggest 3–5 sections based on the brief (e.g., Backlog, In Progress, Review, Done — or phase-based names like Discovery, Build, Launch).
    - Confirm with the user before creating.
@@ -28,8 +27,8 @@ Use the MeisterTask MCP to create a structured project from a goal or brief.
 7. Add the brief and reference material to the project's Documents tab with `mt_projects_documents_create`:
    - If the brief is already a Note, add it by its note token.
    - If the brief was pasted into the chat or lives somewhere else, offer to save it as a Note with `mt_notes_create`, so it has a durable home next to the project. Then add that Note.
-   - Add reference links by URL. If adding a link fails because the account has links turned off, say so and offer to save the content as a Note instead.
-   - Adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
+   - Add reference links by URL. If adding a link fails because the account has links turned off, say so and offer to list the links in a Note instead.
+   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
 8. Return the project URL and a summary of what was created.
 
 ## Important

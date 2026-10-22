@@ -1,6 +1,6 @@
 ---
 name: mt-project-status
-description: Summarize a MeisterTask project's current state, or catch someone up on it, showing task counts by section, overdue items, recent activity, and the project's key documents.
+description: Summarize a MeisterTask project's current state, or catch you up on it when you're new to it, with the project's goal, key documents, task counts by section, overdue items and recent activity.
 ---
 
 # Project status
@@ -29,7 +29,7 @@ Use the MeisterTask MCP to generate a snapshot of a MeisterTask project's curren
 5. Use `mt_search` with the project ID filter to surface recently active items if needed.
 6. Present the summary in a clean, scannable format. Offer to save it as a Note:
    - Create it with `mt_notes_create`, then offer to add it to the project's Documents tab with `mt_projects_documents_create`. Only project admins can add documents; if the call fails, say so and share the Note URL instead.
-   - Adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
+   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
 
 ## Important
 

@@ -26,10 +26,10 @@ Use the MeisterTask MCP to save meeting notes as a Note and convert action items
    - Use `mt_sections_list` to find an appropriate section (e.g., Backlog or To Do).
    - Create tasks using `mt_batch_execute` — fall back to individual `mt_tasks_create` calls if the batch call fails.
    - Add the Note URL as a comment on each task via `mt_tasks_comments_create`.
-5. If a target project is available, add the Note to the project's Documents tab:
-   - Use `mt_projects_documents_create` with the project ID and the note's token.
-   - Only project admins can add documents. If the call fails, tell the user and carry on: the task comments still link the Note.
-   - Adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
+5. If a target project is available, offer to add the Note to the project's Documents tab. Its title becomes visible to every project member.
+   - If the user agrees, use `mt_projects_documents_create` with the project ID and the note's token.
+   - Only project admins can add documents. If the call fails, tell the user and carry on: any task comments still link the Note, and you return its URL anyway.
+   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing.
 6. Return the Note URL and a list of any tasks created.
 
 ## Important
