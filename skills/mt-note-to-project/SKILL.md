@@ -29,7 +29,7 @@ Use the MeisterTask MCP to read an existing Note and scaffold it into a MeisterT
 5. Add the source note to the project's Documents tab:
    - `mt_projects_documents_create` with the project ID and the note's token, so the spec is always one click away from the project.
    - If that fails, tell the user why and add the Note URL as a comment on the first task with `mt_tasks_comments_create` instead.
-   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing. Sharing is set on top-level notes only and covers everything under them, so for a nested note, the user shares the top-level note above it.
+   - If the note was added: adding a note to a project doesn't share it. If it sits under a note the team already shares, say that whoever can read that note can read it, and skip the rest. Otherwise ask whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the top-level note (the note itself, or the shared note it sits under) with them in MeisterTask, since the MCP can't change note sharing and only top-level notes can be shared.
 6. Return the project URL and a summary of what was created.
 
 ## Important

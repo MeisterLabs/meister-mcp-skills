@@ -27,9 +27,9 @@ Use the MeisterTask MCP to create a structured project from a goal or brief.
 6. If team members were specified, invite them using `mt_projects_invite`.
 7. Add the brief and reference material to the project's Documents tab with `mt_projects_documents_create`:
    - If the brief is already a Note, add it by its note token.
-   - If the brief was pasted into the chat or lives somewhere else, offer to save it as a Note with `mt_notes_create`, so it has a durable home next to the project. Ask whether it should sit under a note the team already shares (pass that note's token as `parentToken`). Then add that Note.
+   - If the brief was pasted into the chat or lives somewhere else, offer to save it as a Note with `mt_notes_create`, so it has a durable home next to the project. Ask whether it should sit under a note the team already shares, such as a team note (pass that note's token as `parentToken`). Warn that everyone who can read that note will be able to read it too, so only file there if that's the intended audience. Then add that Note.
    - Add reference links by URL. If adding a link fails because the account has links turned off, say so and offer to list the links in a Note instead.
-   - If the note was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the note with them in MeisterTask, since the MCP can't change note sharing. Sharing is set on top-level notes only and covers everything under them, so for a nested note, the user shares the top-level note above it.
+   - If the note was added: adding a note to a project doesn't share it. If it sits under a note the team already shares, say that whoever can read that note can read it, and skip the rest. Otherwise ask whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the top-level note (the note itself, or the shared note it sits under) with them in MeisterTask, since the MCP can't change note sharing and only top-level notes can be shared.
 8. Return the project URL and a summary of what was created.
 
 ## Important
