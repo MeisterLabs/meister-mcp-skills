@@ -28,10 +28,10 @@ Use the MeisterTask MCP to generate a snapshot of a MeisterTask project's curren
    - **Documents** — how many, and the key ones by name (only if the project has any)
 5. Use `mt_search` with the project ID filter to surface recently active items if needed.
 6. Present the summary in a clean, scannable format. Offer to save it as a Note:
-   - Keep status updates under one parent Note titled "<project name> status updates". If it's among the documents fetched in step 2, use it. Otherwise search for that title with `mt_search` (types: ["NOTES"]) and ask the user before filing under a note it finds. If there's none, create it with `mt_notes_create`.
+   - Keep status updates under one parent Note titled "<project name> status updates". If it's among the documents fetched in step 2, use it. Otherwise search for that title with `mt_search` (types: ["NOTES"]) and ask the user before filing under a note it finds. If there's none, create it with `mt_notes_create`. Ask whether it should sit under a note the team already shares, such as a team note (pass that note's token as `parentToken`), so it's readable without extra sharing.
    - Create the summary as a child note with `mt_notes_create` and `parentToken` set to the parent's token.
    - If the parent isn't in the project's Documents tab yet, offer to add it with `mt_projects_documents_create` and the parent's token, so the tab holds one entry rather than one per update. Only project admins can add documents; if the call fails, say so and return the Note URL.
-   - If the parent was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the parent Note with them in MeisterTask, since the MCP can't change note sharing.
+   - If the parent was added: adding a note to a project doesn't share it. Ask the user whether project members should be able to read it. If so, list them with `mt_projects_members_list` and ask the user to share the parent Note with them in MeisterTask, since the MCP can't change note sharing. Sharing is set on top-level notes only and covers everything under them, so for a nested note, the user shares the top-level note above it.
 
 ## Important
 
