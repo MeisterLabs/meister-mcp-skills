@@ -2,7 +2,7 @@
 
 Agent skills for [MeisterTask](https://www.meistertask.com) and [MindMeister](https://www.mindmeister.com). Each skill gives your AI agent a ready-made workflow for a common task: planning a project, running a meeting, building a mind map, and more.
 
-Skills follow the [Agent Skills](https://agentskills.io) open standard and work with Claude Code, Claude Desktop, claude.ai, ChatGPT, and other supported agents.
+Skills follow the [Agent Skills](https://agentskills.io) open standard and work with Claude, ChatGPT, and other supported agents.
 
 ## Prerequisites
 
