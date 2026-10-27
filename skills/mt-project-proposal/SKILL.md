@@ -15,6 +15,7 @@ Use the MeisterTask MCP to turn a project idea or brief into a structured propos
    - Any known constraints: budget, timeline, team size?
 2. Search for existing context:
    - Use `mt_search` (types: ["NOTES", "PROJECTS"]) to find related prior decisions, existing projects, or OKR notes.
+   - For related projects, check their Documents tab with `mt_projects_documents_list` for specs, briefs and plans.
    - Use `mt_notes_get` on any relevant notes to extract useful context.
    - Surface conflicts or dependencies with existing work before drafting — not after.
 3. Confirm the proposal outline with the user:
